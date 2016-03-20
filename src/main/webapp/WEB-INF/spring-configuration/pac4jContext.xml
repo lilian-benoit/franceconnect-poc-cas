@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c" xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="franceconnect" class="org.pac4j.oidc.client.OidcClient">
+		<property name="clientID"
+			value="....." />
+		<property name="secret"
+			value="..." />
+		<property name="discoveryURI"
+			value="http://localhost:8080/cas/openidc/fcp-configuration" />
+		<property name="useNonce" value="true" />
+		<!-- Tolérance du temps -->
+		<property name="maxClockSkew" value="300" />
+	</bean>
+</beans>

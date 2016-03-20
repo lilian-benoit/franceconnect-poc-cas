@@ -1,0 +1,15 @@
+{
+
+    "keys": 
+
+[
+        {
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "_comment": "l'attribut k correspond au secret au format BASE64",
+            "k": "...."
+        }
+]
+
+}
